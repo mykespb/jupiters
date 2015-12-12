@@ -1,2 +1,2 @@
-# jupiters
+# jupyters
 IPython and its friends
