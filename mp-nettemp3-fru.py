@@ -3,7 +3,7 @@
 
 # Mikhail Kolodin. 
 # Project: Internet temperature.
-# 2015-12-15 1.3.1
+# 2015-12-15 1.3.3
 # 
 # IPython research for internet temperature. 
 # We use now only fontanka.ru website, 
@@ -24,12 +24,17 @@ import time
 import sqlite3
 
 
-# In[13]:
+# In[25]:
 
+# do we print all messages every days, or only several to check received data
 printAll = True
 #printAll = False
+# total counter of received news
 allNews = 0
+# how many do we show
 maxShow = 5
+# seconds to wait between calls (may be 0.1 etc)
+waitSec = 1  
 
 
 # In[14]:
@@ -56,7 +61,7 @@ fullurl = url + plus + '/all.html'
 print ("Getting data from {}" .format(fullurl))
 
 
-# In[21]:
+# In[26]:
 
 def getoneday(ayear, amonth, aday, fullurl):
     """get all headers from fontanka for 1 given day"""
@@ -88,17 +93,17 @@ def getoneday(ayear, amonth, aday, fullurl):
 
     except:
         print ("Error or no such date")
-    time.sleep(1)
+    time.sleep(waitSec)
 
     print ("...\nTotal records: {}" .format(len(arts)))
     allNews += len(arts)
 
 
-# In[22]:
+# In[1]:
 
 def getalldays():
     """get info for all days in history"""
-    for ayear in range(2015, 2016):
+    for ayear in range(2000, 2016):
         for amonth in range(1, 13):
             for aday in range(1, 32):
                 fulldate = "{0:04d}/{1:02d}/{2:02d}" .format (ayear, amonth, aday)
@@ -112,12 +117,16 @@ def getalldays():
 getalldays()
 
 
-# In[ ]:
+# In[24]:
 
 conn.close()
 
 
-# In[ ]:
-
-
-
+# Details and refs:
+# 
+# SQLite
+# https://docs.python.org/2/library/sqlite3.html#sqlite3.connect
+# 
+# XSL
+# https://msdn.microsoft.com/ru-ru/library/ms256086(v=vs.120).aspx
+# 
