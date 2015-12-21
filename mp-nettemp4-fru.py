@@ -49,7 +49,7 @@ curc = dbc.cursor()
 # In[110]:
 
 # calc data per days
-dbc.execute("create table daydata (day text, wpos int, wneg int, mark number)")
+#dbc.execute("create table daydata (day text, wpos int, wneg int, mark number)")
 
 
 # In[18]:
