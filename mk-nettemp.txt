@@ -3,13 +3,13 @@
 
 Версия 1.6 от 2015-12-21
 
-/home/myke/prog/repo/git/jupyters/mk-nettemp.txt
+/jupyters/mk-nettemp.txt
 
 Часть 1. Проверка получения разовых данных
 -------------------------------------
 
-/home/myke/prog/repo/git/jupyters/mp-nettemp1-fru.ipynb
-/home/myke/prog/repo/git/jupyters/mp-nettemp1-fru.py
+/jupyters/mp-nettemp1-fru.ipynb
+/jupyters/mp-nettemp1-fru.py
 
 Подход 1. Заголовки.
 Берём данные из архивов сайта Фонтанки.ру (fontanka.ru).
@@ -23,9 +23,9 @@
 Часть 2. Архивы в БД
 -------------------------------------
 
-/home/myke/prog/repo/git/jupyters/mp-nettemp2-fru.db
-/home/myke/prog/repo/git/jupyters/mp-nettemp2-fru.ipynb
-/home/myke/prog/repo/git/jupyters/mp-nettemp2-fru.py
+/jupyters/mp-nettemp2-fru.db
+/jupyters/mp-nettemp2-fru.ipynb
+/jupyters/mp-nettemp2-fru.py
 
 Заливаем все данные, соотв. образоом размеченные, в sqlite3-архив.
 При новых запускам выполняем только обновление базы, если нужно.
@@ -39,13 +39,13 @@
 Часть 3. Полные данные с 2000 года
 -------------------------------------
 
-/home/myke/prog/repo/git/jupyters/mp-nettemp3-fru.ipynb
-/home/myke/prog/repo/git/jupyters/mp-nettemp3-fru.py
-/home/myke/prog/repo/git/jupyters/mp-nettemp3-fru-2015.db
-/home/myke/prog/repo/git/jupyters/mp-nettemp3-fru-2015-copy.db
-/home/myke/prog/repo/git/jupyters/mp-nettemp3-fru-2015-stat.db
-/home/myke/prog/repo/git/jupyters/mp-nettemp3-fru-procwords.ipynb
-/home/myke/prog/repo/git/jupyters/mp-nettemp3-fru-procwords.py
+/jupyters/mp-nettemp3-fru.ipynb
+/jupyters/mp-nettemp3-fru.py
+/jupyters/mp-nettemp3-fru-2015.db
+/jupyters/mp-nettemp3-fru-2015-copy.db
+/jupyters/mp-nettemp3-fru-2015-stat.db
+/jupyters/mp-nettemp3-fru-procwords.ipynb
+/jupyters/mp-nettemp3-fru-procwords.py
 
 Подход 1. Считать заголовки в БД.
 Получены. ОК. 
@@ -57,8 +57,8 @@
 Часть 4. Анализ данных.
 -------------------------------------
 
-/home/myke/prog/repo/git/jupyters/mp-nettemp4-fru.ipynb
-/home/myke/prog/repo/git/jupyters/mp-nettemp4-fru.py
+/jupyters/mp-nettemp4-fru.ipynb
+/jupyters/mp-nettemp4-fru.py
 
 Кусок 1. Берём плохие и хорошие слова,  одну готовую БД и размечаем поля счётчиков и оценок.
 В работе.
